@@ -1,0 +1,224 @@
+@font-face {
+  font-family: tajwal;
+  src: url(Tajawal-Regular.ttf);
+}
+*{
+    direction: rtl;
+    font-family: tajwal;
+    font-size:17px;
+}
+html {
+  scroll-behavior: smooth;
+}
+body{
+    background-color: #F5F6F8;
+}
+#scroll{
+  display: inline;
+  font-size: 4rem;
+
+  position: fixed;
+  bottom: 10px;
+  right:5px;
+  z-index: 10;
+}
+  /************************************** shared style ************************************** */
+.row{
+    margin:0;
+    clear: both;
+}
+.custom-container{
+    padding-top:5%;
+    padding-bottom: 5%;
+}
+.heading{
+  position: relative;
+}
+.heading::before {
+  content: " ";
+  position: absolute;
+  border-bottom: 4px solid #CB0B0F;
+  width:110px;
+  top:125%;
+  right: 45%;
+  left:40%;
+}
+a:hover{
+  color: #008EC3;
+}
+.nav-link.active{
+background-color: inherit !important;
+border-bottom:  #CB0B0F;
+}
+ /************************************** HEADER ************************************** */
+ header{
+  background-color: #0D1E2F;
+}
+  /************************************** NAVBAR ************************************** */
+
+/* nav bar */
+.custom-nav{
+   height: 4rem;
+  
+}
+.custom-link:hover{
+    border-bottom: 1px solid #fff;
+}
+/************************************** slider ************************************** */
+#slide{
+    position: relative;
+}
+
+.carousel-caption{
+  position: absolute;
+   top:10%;
+   right:20%;
+   left:20%;
+   bottom:50%;
+}
+.carousel-indicators > li {
+    border-radius: 100%;
+    height: 10px;
+    width:10px;
+  }
+/************************************** services ************************************** */
+.service{
+  text-align: center;
+  margin:4%;
+}
+.service img{
+  width: 50%;
+  height: 11rem;
+}
+/************************************** trade-marks ************************************** */
+.trade-marks{
+    padding:  5%;
+}
+.mark-item{
+   width: 100%;
+   margin: 5%;
+   
+}
+.see-more{
+  float:right;
+}
+.trade-marks img{
+  width: 100%;
+}
+.fix-mark{
+  margin-top: 25% ;
+}
+/**************************************  lastest offers ************************************** */
+.news-square a{
+    font-size: 1rem;
+}
+.card{
+    width: 100%;
+    padding: 0;
+}
+.card-head{
+    position: relative;
+}
+.card-img-top{
+  height: 13rem;
+}
+.card-text{
+  font-size: 14px;
+}
+.card-head div{
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+    color:#fff;
+}
+/************************************** calculate ************************************** */
+.form{
+    background-color: #fff;
+    padding: 1%;
+}
+/************************************** contact form ************************************** */
+.contact-form{
+  width: 80%;
+  margin:auto;
+ 
+}
+.contact-input{
+  margin:3%;
+ 
+}
+.contct-welcome{
+  font-size: 2.5rem;
+}
+/************************************** contact form ************************************** */
+
+/************************************** footer ************************************** */
+footer{
+    background-color: #25384C;
+    color: #F5F6F8;
+}
+.heading-nav{
+    position: relative;
+}
+.heading-nav::before {
+    content: " ";
+    position: absolute;
+    border-bottom: 1px solid #FFFFFF;
+    width:90px;
+    top:125%;
+    right: 0;
+  }
+  footer a{
+    color: #F5F6F8;
+  }
+  footer a:hover{
+    color: #F5F6F8;
+    
+  }
+  .fb{
+      font-size: 2rem;
+  }
+  .copy-rights{
+      background-color: #314253;
+      padding: 8px 0 1px 0;
+  }
+  /************************************** Media Query ************************************** */
+  /* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 575px) {
+ 
+  .heading::before {
+    right: 40%;
+    left:40%;
+  }
+}
+
+@media screen and (max-width: 785px) {
+  .slider  {
+    height: 500px;
+  }
+  #slider img {
+    height: 300px;
+  }
+
+  .news-link{
+    font-size: 13px;
+  }
+ 
+ .contact{
+  text-align:right;
+ }
+ footer ul{
+  text-align:right;
+  font-size: 14px;
+}
+}
+@media screen and (max-width: 575px){
+  .heading-nav::before {
+    right: 35%;
+  }
+}
+@media screen and (max-width: 990px)  and (min-width: 520px) {
+  .heading::before {
+    right: 40%;
+    left:40%;
+  }
+}
